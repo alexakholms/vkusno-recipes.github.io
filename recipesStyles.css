@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "forHeadings";
+    src: url(fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: "forText";
+    src: url(fonts/SofiaSans.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.portions{
+    padding: 10px;
+    background-color: rgb(245, 245, 220, 0.5);
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    bottom: 1%;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+}
+.inp{
+    margin-left: 10px;
+    background-color: rgb(223, 235, 203);
+    font-family: "forText";
+    font-size: 15px;
+    border-radius: 10px;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    background-color: darkgreen;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forText";
+    cursor: pointer;
+    color:rgb(115, 173, 113);
+}
+.container{
+    width: auto;
+    margin: 0 auto;
+    background-color:darkolivegreen;
+}
+.container1, .container2{
+    width: 100%;
+    margin: 0 auto;
+}
+.container2{
+    display: flex;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+}
+.logo{
+    width: 150px;
+    height: 90%;
+}
+.logoPic{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.navigation{
+    width: 100%;
+    height: 100px;
+    background-color: darkolivegreen;
+    display: flex;
+    align-items: center;
+}
+.linkto{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forHeadings";
+    font-size: 40px;
+    color:rgb(2, 61, 2);
+    transition: all 0.4s ease 0s;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 0 10px;
+}
+.linkto:hover{
+    background-color: rgb(121, 141, 86);
+}
+a{
+    text-decoration: none;
+}
+.choose{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+.hot, .dessert{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.hotPic, .dessertPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    transition: transform 0.7s ease 0s;
+}
+.hotPic:hover, .dessertPic:hover{
+    transform: scale(1.05);
+}
+.hotText, .dessertText{
+    font-family: "forHeadings";
+    position: absolute;
+    z-index: 1;
+    font-size: 60pt;
+    color: antiquewhite;
+}
+.hotHeader, .desHeader{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forHeadings";
+    font-size: 80px;
+    border-top: 5px solid darkgreen;
+    border-bottom: 5px solid darkgreen;
+    margin: 10px 0;
+}
+.dish1{
+    width: 50%;
+    margin: 0 0 0 20px;
+}
+.hotPic1{
+    width: 100%;
+    height: 500px;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+.hotPicture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hotIngredients1{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forHeadings";
+    font-size: 30pt;
+    margin-bottom: 20px;
+}
+.listOfIng{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.hotIng1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.ingName{
+    width: 50%;
+    font-size: 30px;
+    font-family: "forText";
+}
+.ingCount{
+    width: 19%;
+    display: flex;
+    
+    align-items: center;
+    font-family: "forText";
+    font-size: 30px;
+}
+.ingValue{
+
+    height: 100%;
+    display: flex;
+    font-family: "forText";
+    text-decoration: underline;
+}
+.discr{
+    margin-left: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.recipe1{
+    width: 50%;
+}
+.hotName1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forHeadings";
+    font-size: 50px;
+    background-color: rgb(3, 78, 3);
+}
+.hotRecipe1{
+    width: 100%;
+    padding: 10px;
+}
+.hotRecipe1 ol{
+    margin-left: 40px;
+    font-size: 30px;
+}
+.hotRecipe1 li{
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "forText";
+    background-color: rgb(104, 128, 65);
+    border-radius: 5px;
+}
+#name{
+    font-family: "forText";
+}
+
+.footer{
+    background-color: rgb(23, 54, 1);
+    padding: 10px;
+}
+.suggestions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "forHeadings";
+    font-size: 25px;
+    color:rgb(138, 167, 87)
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(97, 121, 57);
+  font-family: "forText";
+  font-size: 20px;
+}
+input, textarea {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #008337;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "forText";
+}

@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "forHeadings";
+    src: url(fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: "forText";
+    src: url(fonts/SofiaSans.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(129, 151, 93);
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+}
+.logo{
+    width: 150px;
+    height: 90%;
+}
+.logoPic{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.navigation{
+    width: 100%;
+    height: 100px;
+    background-color: darkolivegreen;
+    display: flex;
+    align-items: center;
+}
+.linkto{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forHeadings";
+    font-size: 40px;
+    color:rgb(2, 61, 2);
+    transition: all 1s ease 0s;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 0 10px;
+}
+.linkto:hover{
+    background-color: rgb(121, 141, 86);
+}
+a{
+    text-decoration: none;
+}
+.container1{
+    width: 100%;
+}
+.authorText{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forHeadings";
+    text-transform: uppercase;
+    font-size: 60px;
+    color:rgb(23, 36, 0);
+    background-color: darkgreen;
+    margin-top: 10px;
+}
+.firstAuthor, .secondAuthor{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 20px;
+}
+.pic{
+    width: 350px;
+    height: 100%;
+    margin: 0 40px;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description{
+    width: 60%;
+    height: 100%;
+}
+.name{
+    width: 100%;
+    font-size: 50px;
+    font-family: "forHeadings";
+    text-transform: uppercase;
+    color:rgb(41, 63, 4);
+}
+.about{
+    width: 100%;
+}
+.about ol{
+    font-size: 30px;
+    margin-left: 30px;
+}
+.about li{
+    font-family: "forText";
+    margin-top: 20px;
+}
+.footer{
+    background-color: rgb(23, 54, 1);
+    padding: 10px;
+}
+.suggestions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "forHeadings";
+    font-size: 25px;
+    color:rgb(138, 167, 87)
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(97, 121, 57);
+  font-family: "forText";
+  font-size: 20px;
+}
+input, textarea {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #008337;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "forText";
+}

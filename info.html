@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>вкУСно</title>
+    <link rel="stylesheet" href="./infoStyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.png" alt="" class="logoPic">
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="./index.html">
+                <div class="linkto">Главная</div>
+            </a>
+            <a href="./recipes.html">
+                <div class="linkto">Рецепты</div>
+            </a>
+            <a href="./info.html">
+                <div class="linkto">О нас</div>
+            </a>
+        </div>
+        <div class="container1">
+            <div class="authorText">наши авторы</div>
+            <div class="firstAuthor">
+                <div class="pic">
+                    <img src="./images/me.jpg" alt="" class="picture">
+                </div>
+                <div class="description">
+                    <div class="name"><strong>холмская александра григорьевна</strong></div>
+                    <div class="about">
+                        <ol>
+                            <li>Студент СПбГУПТД ВШПМ</li>
+                            <li>2-ТИД-3</li>
+                            <li>18 лет</li>
+                            <li>Почта: alexaholms2005@gmail.com</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="secondAuthor">
+                <div class="pic">
+                    <img src="./images/pavel.jpg" alt="" class="picture">
+                </div>
+                <div class="description">
+                    <div class="name"><strong>пасечник павел алексеевич</strong></div>
+                    <div class="about">
+                        <ol>
+                            <li>Старший преподаватель СПбГУПТД ВШПМ</li>
+                            <li>Посмотрит работу</li>
+                            <li>Оценит работу</li>
+                            <li>Расскажет о недочетах</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="suggestions"><p>Предложите свой рецепт!</p></div>
+            <form id="feedbackForm">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="name">Название блюда:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="picture">Фото блюда:</label>
+                <input type="file" id="picture" name="picture" required>
+
+                <label for="message">Рецепт:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit">Отправить</button>
+              </form>
+        </div>
+    </div>
+    <script src="./info.js"></script>
+</body>
+</html>

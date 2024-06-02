@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "forHeadings";
+    src: url(fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: "forText";
+    src: url(fonts/SofiaSans.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.left{
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(4, 54, 3);
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+} 
+.slide{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 3s;
+    object-fit:cover;
+}  
+.slide:first-child{
+    opacity: 0.5;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.forLogo{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+}
+.smallLogo{
+    width: 150px;
+    height: 100px;
+    margin: 20vh auto 0 auto;
+}
+.description{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh auto 0 auto;
+    font-size: 20px;
+}
+.description p{
+    text-align: center;
+    color:beige;
+    font-family: "forText";
+}
+.secondBlock{
+    width: 100%;
+
+}
+.recipes, .info{
+    width: 400px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: darkolivegreen;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "forHeadings";
+    font-size: 30pt;
+    color:rgb(19, 46, 2);
+    transition: all 0.5s ease 0s;
+    text-transform:uppercase;
+}
+.recipes:hover, .info:hover{
+    transform: scale(1.03);
+    background-color: rgb(110, 131, 73);
+}
+a{
+    text-decoration: none;
+}
+.mail{
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    font-family: "forText";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:darkolivegreen;
+    cursor:auto;
+}
+abbr{
+    text-decoration: none;
+}
